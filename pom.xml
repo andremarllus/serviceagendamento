@@ -5,7 +5,7 @@
 	<groupId>br.com.posweb</groupId>
 	<artifactId>serviceagendamento</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
 	<name>serviceagendamento</name>
 	<url>http://maven.apache.org</url>
@@ -79,35 +79,4 @@
 		</dependency>
 	</dependencies>
 	
-	<build>
-
-		<finalName>service_agendamento</finalName>
-
-		<resources>
-			<resource>
-				<directory>src/main/resources</directory>
-				<filtering>true</filtering>
-				<includes>
-					<include>**/*.xml</include>
-					<include>**/*.properties</include>
-					<include>**/*.java</include>
-					<include>**/*</include>
-				</includes>
-			</resource>
-		</resources>
-
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.3.2</version>
-				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
-				</configuration>
-			</plugin>
-
-		</plugins>
-
-	</build>
 </project>
